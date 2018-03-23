@@ -1,2 +1,4 @@
 # carapace-laptop
-Carapace bundle for my laptop
+
+Laptop-focused bundle for Carapace.
+
