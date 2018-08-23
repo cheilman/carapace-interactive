@@ -41,7 +41,8 @@
         "no-bare-urls": false,
         "ol-prefix": {
             "style": "ordered"
-        }
+        },
+        "no-inline-html": false
     },
     "editor.detectIndentation": false,
     "files.trimTrailingWhitespace": true,
