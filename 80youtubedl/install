@@ -1,0 +1,19 @@
+#!/usr/bin/env zsh
+#
+# Grab/update the script
+#
+
+url="https://yt-dl.org/downloads/latest/youtube-dl"
+
+moduledir="${1:-${0:a:h}}"
+generated="${2:-/dev/null}"
+
+script="${moduledir}/bin/youtube-dl"
+
+# Grab it
+carapace-message "magenta" "downloading youtube-dl..."
+curl -L "${url}" -o "${script}" -s
+if [ -f "${script}" ]; then
+    chmod +x "${script}"
+fi
+
