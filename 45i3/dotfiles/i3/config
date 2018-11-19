@@ -243,7 +243,7 @@ exec /usr/bin/guake --hide                                      # Dropdown ~ ter
 exec --no-startup-id setbgimage                                 # Set initial backgrounds
 
 # Applications to set up my base workflow.  These will get swallowed by the layouts and end up in the right places
-exec /usr/bin/gnome-terminal --command="runscreen"              # Default screen terminal
+exec /usr/bin/gnome-terminal --command="/usr/local/google/home/cheilman/bin/carapace/runscreen" # Default screen terminal
 exec /usr/bin/google-chrome --profile-directory="Default"       # Personal Chrome
 exec /usr/bin/google-chrome --profile-directory="Profile 1"     # Work Chrome
 #exec /usr/bin/thunderbird                                       # Mail
