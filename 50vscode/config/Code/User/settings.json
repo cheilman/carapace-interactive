@@ -16,20 +16,13 @@
         "LDM",
         "MCM",
         "SDE",
-        "harrigal",
-        "heilmanc",
         "horizonte",
-        "mickolas",
         "mitigations",
         "oncilla",
         "parallelizable",
         "performant",
         "prioritizations",
-        "rcmill",
         "recurse",
-        "ritesh",
-        "riteshah",
-        "sepidj"
     ],
     "bracketPairColorizer.forceIterationColorCycle": true,
     "markdownlint.config": {
@@ -42,9 +35,12 @@
         "ol-prefix": {
             "style": "ordered"
         },
-        "no-inline-html": false
+        "no-inilne-html": false
     },
+    "editor.rules": [80],
     "editor.detectIndentation": false,
+    "editor.tabSize": 2,
+    "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "files.autoSave": "afterDelay",
     "workbench.colorCustomizations": {
@@ -54,7 +50,7 @@
         "sideBar.border": "#102a44",
         "sideBar.foreground": "#8BADC1",
     },
-    "workbench.colorTheme": "Night Owl No Italics",
+    "workbench.colorTheme": "Night Owl",
     "editor.tokenColorCustomizations": {
         "[Night Owl No Italics]": {
             "textMateRules": [
@@ -94,4 +90,18 @@
         }
     },
     "breadcrumbs.enabled": true,
+    "update.channel": "none",
+    "clang-format.fallbackStyle": "google",
+    "python.linting.pylintPath": "/usr/bin/gpylint",
+    "files.associations": {
+        "BUILD": "bazel",
+        "METADATA": "bazel",
+        "WORKSPACE": "bazel",
+        "*.gss": "css",
+    },
+    "[bazel]": {
+        "editor.formatOnSave": true,
+    },
+    "workbench.iconTheme": "vscode-icons",
 }
+
