@@ -20,7 +20,7 @@ if [ $NUMMONITORS -eq 1 ]; then
 else
     echo "Docking..."
     xrandr --auto
-    xrandr --output DP1-1 --primary --left-of eDP1 --auto
+    xrandr --output DP-6 --primary --left-of DP-7 --auto
     makebright
     i3dock
 fi

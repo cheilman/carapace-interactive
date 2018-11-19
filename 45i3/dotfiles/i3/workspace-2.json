@@ -1,40 +1,4 @@
 // vim:ts=4:sw=4:et
-{
-    // stacked split container with 2 children
-    "border": "normal",
-    "floating": "auto_off",
-    "layout": "stacked",
-    "percent": 0.5,
-    "type": "con",
-    "nodes": [
-        {
-            "border": "normal",
-            "current_border_width": 2,
-            "floating": "auto_off",
-            "name": ".* - Mozilla Thunderbird",
-            "percent": 0.5,
-            "swallows": [
-               {
-                "class": "^Thunderbird$"
-               }
-            ],
-            "type": "con"
-        },
-        {
-            "border": "normal",
-            "current_border_width": 2,
-            "floating": "auto_off",
-            "percent": 0.5,
-            "swallows": [
-               {
-                "class": "^Gnome\\-terminal$"
-                // "title": "^screen$"
-               }
-            ],
-            "type": "con"
-        }
-    ]
-}
 
 {
     // stacked split container with 2 children
@@ -51,7 +15,9 @@
             "percent": 0.5,
             "swallows": [
                {
-                "class": "^Code$"
+                "class": "^[Gg]oogle\\-chrome$",
+                "instance": "^crx_.*$",
+                "title": "^Google\\ Hangouts.*$"
                }
             ],
             "type": "con"
@@ -63,10 +29,35 @@
             "percent": 0.5,
             "swallows": [
                {
-                "class": "^[Gg]oogle\\-chrome$"
+                "class": "^[Gg]oogle\\-chrome$",
+                "instance": "^crx_.*$",
+                "title": "^Google\\ Hangouts.*$"
                }
             ],
             "type": "con"
         }
+    ]
+}
+
+{
+    // stacked split container with 2 children
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "stacked",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+			"border": "normal",
+			"current_border_width": 2,
+			"floating": "auto_off",
+			"swallows": [
+			   {
+				"class": "^[Gg]oogle\\-chrome$",
+				"name": "^.*chris.heilman.*$"
+			   }
+			],
+			"type": "con"
+		}
     ]
 }
