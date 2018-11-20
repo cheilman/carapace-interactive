@@ -4,7 +4,7 @@
 #
 
 # Lock first
-lock
+$HOME/bin/carapace/lock
 
 # Suspend
 systemctl suspend
