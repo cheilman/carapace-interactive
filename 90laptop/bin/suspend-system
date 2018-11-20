@@ -7,5 +7,5 @@
 lock
 
 # Suspend
-sudo pm-suspend
+systemctl suspend
 

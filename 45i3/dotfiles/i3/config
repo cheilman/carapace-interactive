@@ -184,6 +184,7 @@ bindsym Control+Mod1+Shift+KP_Multiply exec --no-startup-id mute
 bindsym XF86AudioMute exec --no-startup-id mute
 bindsym XF86AudioRaiseVolume exec --no-startup-id volup
 bindsym XF86AudioLowerVolume exec --no-startup-id voldown
+bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle && killall -SIGUSR1 i3status
 
 # Adjust brightness on laptop
 bindsym Control+Mod1+minus exec --no-startup-id dim
@@ -225,8 +226,8 @@ exec --no-startup-id ~/.i3/autostart
 exec --no-startup-id /usr/bin/dex -ae i3
 
 # Pre-configured layouts.  They catch launched programs until it looks like what I want it to.
-exec --no-startup-id "i3-msg 'workspace 1; append_layout ~/.i3/workspace-1.json'"
-exec --no-startup-id "i3-msg 'workspace 2; append_layout ~/.i3/workspace-2.json'"
+#exec --no-startup-id "i3-msg 'workspace 1; append_layout ~/.i3/workspace-1.json'"
+#exec --no-startup-id "i3-msg 'workspace 2; append_layout ~/.i3/workspace-2.json'"
 
 # Tray applets I want started all the time
 exec --no-startup-id /usr/bin/nm-applet
@@ -236,21 +237,22 @@ exec --no-startup-id /usr/bin/start-pulseaudio-x11
 exec --no-startup-id /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-sound
 
 # Autostart programs.
-#exec /home/local/ANT/heilmanc/.local/share/JetBrains/Toolbox/bin/jetbrains-toolbox --minimize
+exec /home/local/ANT/heilmanc/.local/share/JetBrains/Toolbox/bin/jetbrains-toolbox --minimize
 exec /usr/bin/guake --hide                                      # Dropdown ~ terminal
-#exec --no-startup-id disable-menu-key                           # Disable menu/right-click key
-#exec --no-startup-id disable-yubikey-otp                        # No YubiKey OTP
+exec --no-startup-id disable-menu-key                           # Disable menu/right-click key
 exec --no-startup-id setbgimage                                 # Set initial backgrounds
 
 # Applications to set up my base workflow.  These will get swallowed by the layouts and end up in the right places
 exec /usr/bin/gnome-terminal --command="/usr/local/google/home/cheilman/bin/carapace/runscreen" # Default screen terminal
 exec /usr/bin/google-chrome --profile-directory="Default"       # Personal Chrome
 exec /usr/bin/google-chrome --profile-directory="Profile 1"     # Work Chrome
-#exec /usr/bin/thunderbird                                       # Mail
-#exec /usr/bin/atom                                              # Editor
 exec /usr/bin/code                                              # More different editor
-#exec /usr/local/bin/amazonchime                                 # Work Chime (IM)
 
 # Trigger a dock/undock check -- correctly sets the primary monitor so the tray is in the right place
 exec --no-startup-id dock
+
+# Google things
+exec --no-startup-id /usr/bin/cinnamon-settings-daemon
+exec --no-startup-id /usr/bin/cinnamon-sound-applet
+exec --no-startup-id /usr/bin/goobuntu-welcome
 

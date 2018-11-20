@@ -7,6 +7,11 @@ export PATH="$PATH:$HOME/bin/carapace"
 
 background="111111"
 
+if [ -x /usr/share/goobuntu-desktop-files/xsecurelock.sh ]; then
+    /usr/share/goobuntu-desktop-files/xsecurelock.sh
+    exit $?
+fi
+
 which i3lock &> /dev/null
 if [ $? -eq 0 ]; then
     file=`tempfile --prefix lkscr --suffix .png`
