@@ -146,7 +146,7 @@ bar {
     status_command ~/bin/carapace/bumblebee-bar
 
     # Put the tray on the primary window
-    tray_output primary
+#tray_output primary
 
     # Make the text bigger for my giant monitor
     font pango:Inconsolata, FontAwesome 10
