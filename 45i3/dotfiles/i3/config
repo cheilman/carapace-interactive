@@ -163,7 +163,7 @@ client.focused          #4c7899 #2877BB #ffffff #2e9ef4   #285577
 #client.background       #ffffff
 
 # Common commands/launch common programs
-bindsym Control+Mod1+l exec lock
+bindsym Control+Mod1+l exec /usr/local/google/home/cheilman/bin/carapace/lock
 bindsym Control+Mod1+k exec suspend-system
 bindsym XF86Sleep exec suspend-system
 bindsym Control+Mod1+t exec gnome-terminal

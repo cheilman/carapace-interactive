@@ -3,6 +3,8 @@
 # Lock the screen (X)
 #
 
+export PATH="$PATH:$HOME/bin/carapace"
+
 background="111111"
 
 which i3lock &> /dev/null
