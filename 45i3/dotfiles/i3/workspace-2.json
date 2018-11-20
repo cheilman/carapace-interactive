@@ -15,9 +15,8 @@
             "percent": 0.5,
             "swallows": [
                {
-                "class": "^[Gg]oogle\\-chrome$",
-                "instance": "^crx_.*$",
-                "title": "^Google\\ Hangouts.*$"
+                "class": "chrome",
+                "instance": "^crx_.*$"
                }
             ],
             "type": "con"
@@ -29,9 +28,8 @@
             "percent": 0.5,
             "swallows": [
                {
-                "class": "^[Gg]oogle\\-chrome$",
-                "instance": "^crx_.*$",
-                "title": "^Google\\ Hangouts.*$"
+                "class": "chrome",
+                "instance": "^crx_.*$"
                }
             ],
             "type": "con"
