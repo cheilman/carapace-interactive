@@ -1,4 +1,4 @@
-i3config
+config
 workspace-*
 dev-py3status/
 bumblebee-status/
