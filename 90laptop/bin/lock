@@ -3,6 +3,14 @@
 # Lock the screen (X)
 #
 
+TRAPEXIT() {
+    # Resume dunst notifications
+    killall -SIGUSR2 dunst &>/dev/null || :
+}
+
+# Pause dunst notifications
+killall -SIGUSR1 dunst &>/dev/null || :
+
 if [ -r "$HOME/.path-carapace" ]; then
     source "$HOME/.path-carapace"
 fi
