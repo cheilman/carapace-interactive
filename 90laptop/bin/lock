@@ -3,14 +3,11 @@
 # Lock the screen (X)
 #
 
-export PATH="$PATH:$HOME/bin/carapace"
+if [ -r "$HOME/.path-carapace" ]; then
+    source "$HOME/.path-carapace"
+fi
 
 background="111111"
-
-if [ -x /usr/share/goobuntu-desktop-files/xsecurelock.sh ]; then
-    /usr/share/goobuntu-desktop-files/xsecurelock.sh
-    exit $?
-fi
 
 which i3lock &> /dev/null
 if [ $? -eq 0 ]; then
@@ -33,6 +30,11 @@ if [ $? -eq 0 ]; then
     rm $file
 
     exit $ret
+fi
+
+if [ -x /usr/share/goobuntu-desktop-files/xsecurelock.sh ]; then
+    /usr/share/goobuntu-desktop-files/xsecurelock.sh
+    exit $?
 fi
 
 which gnome-screensaver-command &> /dev/null

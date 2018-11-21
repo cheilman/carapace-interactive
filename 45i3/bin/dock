@@ -3,6 +3,10 @@
 # Toggle dock state appropriately, depending on what's connected
 #
 
+if [ -r "$HOME/.path-carapace" ]; then
+    source "$HOME/.path-carapace"
+fi
+
 if [ -z "$1" ]; then
     NUMMONITORS=`xrandr | grep ' connected' | wc -l`
 else

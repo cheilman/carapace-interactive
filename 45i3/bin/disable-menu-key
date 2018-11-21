@@ -3,6 +3,10 @@
 # Disable the menu key
 #
 
+if [ -r "$HOME/.path-carapace" ]; then
+    source "$HOME/.path-carapace"
+fi
+
 if [ "$1" = "--sleep" ]; then
     randsleep 30 10
 fi

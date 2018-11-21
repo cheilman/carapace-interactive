@@ -3,6 +3,10 @@
 # Adjust volume
 #
 
+if [ -r "$HOME/.path-carapace" ]; then
+    source "$HOME/.path-carapace"
+fi
+
 /usr/bin/pactl set-sink-mute @DEFAULT_SINK@ toggle
 audio-status -d
 

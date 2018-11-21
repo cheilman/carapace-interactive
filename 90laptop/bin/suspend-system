@@ -3,8 +3,12 @@
 # Suspend the system
 #
 
+if [ -r "$HOME/.path-carapace" ]; then
+    source "$HOME/.path-carapace"
+fi
+
 # Lock first
-$HOME/bin/carapace/lock
+lock
 
 # Suspend
 systemctl suspend

@@ -3,6 +3,10 @@
 # Adjust volume
 #
 
+if [ -r "$HOME/.path-carapace" ]; then
+    source "$HOME/.path-carapace"
+fi
+
 voladj '-5%'
 audio-status -d
 

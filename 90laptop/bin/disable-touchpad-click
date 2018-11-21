@@ -4,5 +4,9 @@
 # Disable tap-to-click on the touchpad
 #
 
+if [ -r "$HOME/.path-carapace" ]; then
+    source "$HOME/.path-carapace"
+fi
+
 toggle-touchpad-click 0
 

@@ -6,6 +6,10 @@
 # Allows "-i" or "--no-index" to hide the sink index
 #
 
+if [ -r "$HOME/.path-carapace" ]; then
+    source "$HOME/.path-carapace"
+fi
+
 show_name=1
 show_default_only=0
 show_index=1
