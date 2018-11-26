@@ -226,8 +226,6 @@ exec --no-startup-id $HOME/bin/carapace/setbgimage                              
 
 # Applications to set up my base workflow.  These will get swallowed by the layouts and end up in the right places
 exec /usr/bin/gnome-terminal --command="$HOME/bin/carapace/runscreen" # Default screen terminal
-exec /usr/bin/google-chrome --profile-directory="Default"       # Personal Chrome
-exec /usr/bin/google-chrome --profile-directory="Profile 1"     # Work Chrome
 exec /usr/bin/code                                              # More different editor
 
 # Trigger a dock/undock check -- correctly sets the primary monitor so the tray is in the right place
