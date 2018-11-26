@@ -18,10 +18,24 @@ if [ ! -d "$dir" ]; then
     exit 1
 fi
 
+if [ -z "$DISPLAY" ]; then
+    export DISPLAY=":0"
+fi
+
 file="$dir/screenshot-`id -un`-`date "+%Y%m%d-%H%M%S"`.png"
 
-# WHY?!?! https://github.com/mate-desktop/mate-utils/issues/37
-/bin/sleep 0.5s
+if [ -x "$(which gnome-screenshot)" ]; then
+    # Try gnome-screenshot
 
-gnome-screenshot -a -f "$file"
+    # WHY?!?! https://github.com/mate-desktop/mate-utils/issues/37
+    /bin/sleep 0.5s
+
+    gnome-screenshot -a -f "$file"
+elif [ -x "$(which import)" ]; then
+    # Use imagemagick
+    import $file
+else
+    # Nope!
+    >&2 echo "Failed to find a screen-shot program."
+fi
 
