@@ -200,11 +200,9 @@ bindsym $mod+grave exec --no-startup-id $HOME/bin/carapace/toggle-touchpad-click
 bindsym $mod+bracketright exec --no-startup-id $HOME/bin/carapace/toggle-yubikey-otp
 
 # Associate some programs with specific workspaces
-assign [class="^[Gg]oogle.chrome$" instance="^[Gg]oogle.chrome$"] workspace 1
-assign [class="^[Gg]oogle.chrome$" instance="^crx_.*$"] workspace 2
 
 # These specifically catch hangouts windows
-assign [class="^google.chrome$" instance="^crx_.*$"] 1
+assign [class="^[Gg]oogle.chrome$" instance="^crx_.*$"] workspace 2
 for_window [class="^google.chrome$" instance="^crx_.*$"] floating disable
 
 # When you click links, don't change focus to the browser (etc.)
