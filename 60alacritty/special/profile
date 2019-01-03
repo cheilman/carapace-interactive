@@ -1,0 +1,9 @@
+#!zsh
+#
+# Prefer the alacrity terminal
+#
+
+if [ -x "$(which alacritty)" ]; then
+  export TERMINAL="$(which alacritty)"
+fi
+
