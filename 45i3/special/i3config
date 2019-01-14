@@ -21,8 +21,8 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
-bindsym Control+Mod1+t exec i3-sensible-terminal
+bindsym $mod+Return exec $HOME/bin/carapace/alacritty
+bindsym Control+Mod1+t exec $HOME/bin/carapace/alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -223,7 +223,7 @@ exec --no-startup-id $HOME/bin/carapace/disable-menu-key                        
 exec --no-startup-id $HOME/bin/carapace/setbgimage                                 # Set initial backgrounds
 
 # Applications to set up my base workflow.  These will get swallowed by the layouts and end up in the right places
-exec /usr/bin/gnome-terminal --command="$HOME/bin/carapace/runscreen" # Default screen terminal
+exec $HOME/bin/carapace/alacritty --command="$HOME/bin/carapace/runscreen" # Default screen terminal
 exec /usr/bin/code                                              # More different editor
 
 # Trigger a dock/undock check -- correctly sets the primary monitor so the tray is in the right place
