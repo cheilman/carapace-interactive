@@ -1,18 +1,17 @@
-rofi.modi:               combi,window,windowcd
-rofi.show-icons:         true
-rofi.terminal:           alacritty
-rofi.sort:               true
-rofi.levenshtein-sort:   true
 rofi.case-sensitive:     false
-rofi.sidebar-mode:       true
-rofi.combi-modi:         drun,run
-rofi.matching:           fuzzy
 rofi.click-to-exit:      true
+rofi.combi-modi:         drun,run
+rofi.drun-match-fields:  name,generic,exec
+rofi.levenshtein-sort:   true
+rofi.matching:           fuzzy
+rofi.modi:               combi,window,windowcd
+!rofi.run-command:        zsh -ic '{cmd}'
+!rofi.run-list-command:   zsh -ic '( print -rl ${(k)aliases} ; find $HOME/bin -type f -executable ) | sort | xargs -n1 basename '
+!rofi.run-shell-command:  alacritty -e "zsh -ic '{cmd}'"
+rofi.show-icons:         true
 rofi.show-match:         true
+rofi.sidebar-mode:       true
+rofi.sort:               true
+rofi.terminal:           alacritty
 !rofi.theme:             arthur.rasi
 rofi.theme:              DarkBlue.rasi
-!rofi.run-command:        zsh -ic '{cmd}'
-!rofi.run-shell-command:  alacritty -e "zsh -ic '{cmd}'"
-!rofi.run-list-command:   zsh -ic '( print -rl ${(k)aliases} ; find $HOME/bin -type f -executable ) | sort | xargs -n1 basename '
-rofi.drun-match-fields:  name,generic,exec
-
