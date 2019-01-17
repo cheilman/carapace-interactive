@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+# Menu for running stuff in i3
+#
+
+which rofi &>/dev/null && {
+  i3-msg 'exec "rofi -modi drun,run,window,windowcd -show drun"'
+  exit $?
+}
+
+which i3-dmenu-startup && {
+  i3-msg 'exec --no-startup-id i3-dmenu-startup'
+  exit $?
+}
+
+i3-msg 'exec dmenu_run'
+
