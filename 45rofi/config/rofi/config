@@ -1,6 +1,6 @@
 rofi.modi:                           combi,window,windowcd
 rofi.show-icons:                     true
-rofi.terminal:                       $HOME/bin/carapace/alacritty
+rofi.terminal:                       alacritty
 rofi.sort:                           true
 rofi.levenshtein-sort:               true
 rofi.case-sensitive:                 false
