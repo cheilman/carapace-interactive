@@ -28,8 +28,8 @@ bindsym Control+Mod1+t exec $HOME/bin/carapace/alacritty
 bindsym $mod+Shift+q kill
 
 # Our fancy menus
-bindsym $mod+d exec --no-startup-id $HOME/bin/carapace/carapace-i3-menu
-bindsym $mod+Shift+d exec --no-startup-id $HOME/bin/carapace/carapace-i3-menu-run
+bindsym $mod+d exec --no-startup-id $HOME/bin/carapace/carapace-i3-menu drun
+bindsym $mod+Shift+d exec --no-startup-id $HOME/bin/carapace/carapace-i3-menu run
 
 # change focus
 bindsym $mod+h focus left
