@@ -199,7 +199,7 @@ bindsym $mod+bracketright exec --no-startup-id $HOME/bin/carapace/toggle-yubikey
 # Associate some programs with specific workspaces
 
 # These specifically catch hangouts windows
-assign [class="^[Gg]oogle.chrome$" instance="^crx_.*$"] workspace 2
+assign [class="^[Gg]oogle.chrome$" instance="^crx_.*$"] workspace 9
 for_window [class="^google.chrome$" instance="^crx_.*$"] floating disable
 
 # When you click links, don't change focus to the browser (etc.)

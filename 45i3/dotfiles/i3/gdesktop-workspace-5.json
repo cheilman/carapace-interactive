@@ -1,0 +1,32 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "percent": 0.5,
+    "swallows": [
+       {
+       "class": "^Google\\-chrome$",
+       // "instance": "^google\\-chrome$",
+       "title": "^Professional\\ Membership\\ Reimbursement\\ Program\\ \\-\\ Google\\ Chrome$",
+       // "window_role": "^browser$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "percent": 0.5,
+    "swallows": [
+       {
+       "class": "^Alacritty$",
+       // "instance": "^Alacritty$",
+       // "title": "^\\[gDesktop\\/main\\-11\\]\\ 0\\ \\-\\-\\ idle\\ $"
+       }
+    ],
+    "type": "con"
+}
+

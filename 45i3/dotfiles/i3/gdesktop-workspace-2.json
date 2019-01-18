@@ -1,0 +1,26 @@
+// vim:ts=4:sw=4:et
+{
+    // splitv split container with 1 children
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 1,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "swallows": [
+               {
+               "class": "^Google\\-chrome$",
+               // "instance": "^google\\-chrome$",
+               "title": "^Inbox\\ \\-\\ chris\\.heilman\\@gmail\\.com\\ \\-\\ Gmail\\ \\-\\ Google\\ Chrome$",
+               // "window_role": "^browser$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
