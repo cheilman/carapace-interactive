@@ -159,7 +159,7 @@ client.focused          #4c7899 #2877BB #ffffff #2e9ef4   #285577
 
 # Common commands/launch common programs
 bindsym Control+Mod1+l exec $HOME/bin/carapace/lock
-bindsym Control+Mod1+k exec $HOME/bin/carapace/suspend-system
+#bindsym Control+Mod1+k exec $HOME/bin/carapace/suspend-system
 bindsym XF86Sleep exec $HOME/bin/carapace/suspend-system
 bindsym $mod+c exec $HOME/bin/carapace/select-screenshot
 
