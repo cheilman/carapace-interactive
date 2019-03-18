@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# Figure out what terminal to use for things
+#
+
+$(carapace-smart-terminal-select) "$@"
+

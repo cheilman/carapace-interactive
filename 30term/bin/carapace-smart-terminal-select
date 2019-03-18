@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+# Figure out what terminal to use for things
+#
+
+candidates=( tilix alacritty gnome-terminal )
+terms=()
+
+for i in "${candidates[@]}"; do
+  pth="$(which "$i" 2>/dev/null)"
+  if [ -n "$pth" ] && [ -x "$pth" ]; then
+    terms+=($pth)
+  fi
+done
+
+term="${terms[0]}"
+
+# Did we find anything?
+if [ ! -x "$term" ]; then
+  >&2 echo "Unable to find working terminal."
+  exit 1
+fi
+
+echo $term
+

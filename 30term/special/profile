@@ -1,0 +1,11 @@
+#!zsh
+#
+# Set terminal variable
+#
+
+term="$(carapace-smart-terminal-select)"
+
+if [ -x "$term" ]; then
+  export TERMINAL="$term"
+fi
+

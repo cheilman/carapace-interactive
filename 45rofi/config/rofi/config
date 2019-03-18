@@ -7,11 +7,11 @@ rofi.matching:           fuzzy
 rofi.modi:               combi,window,windowcd
 !rofi.run-command:        zsh -ic '{cmd}'
 !rofi.run-list-command:   zsh -ic '( print -rl ${(k)aliases} ; find $HOME/bin -type f -executable ) | sort | xargs -n1 basename '
-!rofi.run-shell-command:  alacritty -e "zsh -ic '{cmd}'"
+!rofi.run-shell-command:  carapace-smart-terminal -e "zsh -ic '{cmd}'"
 rofi.show-icons:         true
 rofi.show-match:         true
 rofi.sidebar-mode:       true
 rofi.sort:               true
-rofi.terminal:           alacritty
+rofi.terminal:           carapace-smart-terminal
 !rofi.theme:             arthur.rasi
 rofi.theme:              DarkBlue.rasi
