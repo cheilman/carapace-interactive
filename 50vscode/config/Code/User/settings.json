@@ -103,5 +103,6 @@
         "editor.formatOnSave": true,
     },
     "workbench.iconTheme": "vscode-icons",
+    "window.titleBarStyle": "custom",
 }
 
