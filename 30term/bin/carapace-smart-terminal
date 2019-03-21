@@ -3,5 +3,5 @@
 # Figure out what terminal to use for things
 #
 
-$(carapace-smart-terminal-select) "$@"
+$(${0%/*}/carapace-smart-terminal-select) "$@"
 
