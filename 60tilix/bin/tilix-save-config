@@ -1,0 +1,6 @@
+#!/bin/bash
+
+file="${CARAPACE:-$HOME/.carapace}/bundles/interactive/60tilix/tilix.dconf"
+
+dconf dump /com/gexperts/Tilix/ > "$file"
+
