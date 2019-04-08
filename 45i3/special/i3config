@@ -219,10 +219,6 @@ exec /usr/bin/guake --hide                                      # Dropdown ~ ter
 exec --no-startup-id $HOME/bin/carapace/disable-menu-key                           # Disable menu/right-click key
 exec --no-startup-id $HOME/bin/carapace/setbgimage                                 # Set initial backgrounds
 
-# Applications to set up my base workflow.  These will get swallowed by the layouts and end up in the right places
-exec $HOME/bin/carapace/carapace-smart-terminal --command="$HOME/bin/carapace/runscreen" # Default screen terminal
-exec /usr/bin/code                                              # More different editor
-
 # Trigger a dock/undock check -- correctly sets the primary monitor so the tray is in the right place
 exec --no-startup-id $HOME/bin/carapace/dock
 
