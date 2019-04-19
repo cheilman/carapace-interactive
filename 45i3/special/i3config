@@ -162,6 +162,7 @@ bindsym Control+Mod1+l exec $HOME/bin/carapace/lock
 #bindsym Control+Mod1+k exec $HOME/bin/carapace/suspend-system
 bindsym XF86Sleep exec $HOME/bin/carapace/suspend-system
 bindsym $mod+c exec $HOME/bin/carapace/select-screenshot
+bindsym $mod+x exec $HOME/bin/carapace/guess-notify
 
 # Scratchpad is like a floating workspace, but I rarely use it
 #bindsym $mod+m move scratchpad
