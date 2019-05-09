@@ -26,7 +26,7 @@
     ],
     "bracketPairColorizer.forceIterationColorCycle": true,
     "markdownlint.config": {
-        "header-style": { "style": "setext_with_atx"},
+        "header-style": { "style": "atx"},
         "ul-indent": { "indent": 4 },
         "no-trailing-punctuation": { "punctuation": ".,;:!" },
         "fenced-code-language": false,
