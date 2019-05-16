@@ -1,12 +1,12 @@
-Guake stores its things in (I think) ~/.gconf/apps/guake.
+Guake
+=====
 
-I'm saving settings in this module, but there isn't anything (yet) that
-automatically symlinks them up.
+Quake-stype terminal.
 
+Settings aren't in a file, but you can do:
 
-Try:
-
-```shell
-$ ln -s ~/.carapace/bundles/interactive/70guake/gconf-guake ~/.gconf/apps/guake
+```bash
+$ dconf dump /apps/guake/ > guake.dconf
+$ dconf load /apps/guake/ < guake.dconf
 ```
 

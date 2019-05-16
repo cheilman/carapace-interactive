@@ -1,0 +1,6 @@
+#!/bin/bash
+
+file="${CARAPACE:-$HOME/.carapace}/bundles/interactive/70guake/guake.dconf"
+
+dconf load /apps/guake/ < "$file"
+
