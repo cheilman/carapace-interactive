@@ -1,26 +1,51 @@
 [general]
 prompt-on-quit=true
 window-height=50
-mouse-display=true
+mouse-display=false
 use-login-shell=true
 window-width=100
 max-tab-name-length=100
 window-losefocus=false
 history-size=4000
-open-tab-cwd=true
+open-tab-cwd=false
 window-tabbar=true
 window-halignment=0
 quick-open-command-line='gedit %(file_path)s'
 compat-delete='delete-sequence'
 scroll-keystroke=true
 abbreviate-tab-names=false
-display-n=0
+display-n=-1
 use-default-font=true
 use-trayicon=false
-use-scrollbar=true
+window-height-f=50.0
+use-scrollbar=false
 window-refocus=true
 tab-ontop=true
 use-popup=false
+
+[keybindings/local]
+decrease-height='disabled'
+new-tab='disabled'
+switch-tab7='disabled'
+switch-tab10='disabled'
+switch-tab5='disabled'
+switch-tab8='disabled'
+switch-tab9='disabled'
+close-tab='disabled'
+toggle-hide-on-lose-focus='disabled'
+rename-current-tab='disabled'
+toggle-fullscreen='disabled'
+previous-tab='disabled'
+switch-tab1='disabled'
+switch-tab2='disabled'
+switch-tab3='disabled'
+switch-tab4='disabled'
+next-tab='disabled'
+search-on-web='disabled'
+switch-tab6='disabled'
+quit='disabled'
+increase-height='disabled'
+switch-tab-last='disabled'
 
 [keybindings/global]
 show-hide='<Alt>grave'
@@ -30,5 +55,6 @@ transparency=90
 
 [style/font]
 allow-bold=true
+style='NovaMono for Powerline Bold 10'
 palette='#000000000000:#cccc00000000:#4e4e9a9a0606:#c4c4a0a00000:#34346565a4a4:#757550507b7b:#060698209a9a:#d3d3d7d7cfcf:#555557575353:#efef29292929:#8a8ae2e23434:#fcfce9e94f4f:#72729f9fcfcf:#adad7f7fa8a8:#3434e2e2e2e2:#eeeeeeeeecec:#ffffffffffff:#000000000000'
 palette-name='Tango'
