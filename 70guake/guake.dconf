@@ -1,5 +1,5 @@
 [general]
-prompt-on-quit=true
+prompt-on-quit=false
 window-height=50
 mouse-display=false
 use-login-shell=true
@@ -21,6 +21,7 @@ window-height-f=50.0
 use-scrollbar=false
 window-refocus=true
 tab-ontop=true
+window-width-f=100.0
 use-popup=false
 
 [keybindings/local]
