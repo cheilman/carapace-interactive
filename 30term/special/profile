@@ -1,4 +1,4 @@
-#!zsh
+#!/bin/sh
 #
 # Set terminal variable
 #
