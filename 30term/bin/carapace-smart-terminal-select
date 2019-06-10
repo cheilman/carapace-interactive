@@ -3,7 +3,7 @@
 # Figure out what terminal to use for things
 #
 
-candidates=( tilix alacritty gnome-terminal )
+candidates=( tilix alacritty gnome-terminal xterm )
 terms=()
 
 for i in "${candidates[@]}"; do
