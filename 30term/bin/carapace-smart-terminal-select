@@ -9,7 +9,10 @@ terms=()
 for i in "${candidates[@]}"; do
   pth="$(which "$i" 2>/dev/null)"
   if [ -n "$pth" ] && [ -x "$pth" ]; then
-    terms+=($pth)
+    # Make sure it's actually executable
+    if $pth --version &>/dev/null; then
+      terms+=("$pth")
+    fi
   fi
 done
 
@@ -21,5 +24,5 @@ if [ ! -x "$term" ]; then
   exit 1
 fi
 
-echo $term
+echo "$term"
 
