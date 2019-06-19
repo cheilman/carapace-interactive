@@ -1,0 +1,12 @@
+#!zsh
+#
+# Base interactive goodies
+#
+
+# Get SSIDs
+alias wifi-ssid='nmcli -f SSID device wifi list | grep -v SSID | sort | uniq'
+
+# Open a file like you "double-clicked" on it
+alias click='xdg-open'
+
+
