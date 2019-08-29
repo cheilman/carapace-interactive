@@ -53,7 +53,8 @@ urgency.uda.priority.L.coefficient=-0.1
 
 
 # User defined stuff
-urgency.user.tag.personal.coefficient=-2.0
+urgency.user.tag.personal.coefficient=-4.0
+urgency.user.tag.career.coefficient=-2.0
 urgency.user.tag.work.coefficient=2.0
 urgency.user.tag.hire.coefficient=4.0
 
@@ -61,6 +62,7 @@ color.tag.OVERDUE=on red bold
 color.tag.DUETODAY=on rgb103
 color.tag.hire=magenta
 color.tag.personal=blue bold
+color.tag.career=cyan
 color.tag.work=cyan bold
 
 alias.complete=done
