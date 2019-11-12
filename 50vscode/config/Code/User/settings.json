@@ -104,5 +104,6 @@
     },
     "workbench.iconTheme": "vscode-icons",
     "window.titleBarStyle": "custom",
+    "vsicons.dontShowNewVersionMessage": true,
 }
 
