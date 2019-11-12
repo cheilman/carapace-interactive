@@ -7,8 +7,8 @@
     -m \
         shortnic \
         isup:goog \
-        battery \
         cpu \
+        battery \
         load1 \
         pasink \
         date \
