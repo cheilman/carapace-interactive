@@ -29,16 +29,13 @@
     },
     "battery": {
         "warning": {
-            "fg": "#002b36",
-            "bg": "#FFFF00"
+            "fg": "#FFFF00"
         },
         "critical": {
-            "fg": "#002b36",
-            "bg": "#FF0000"
+            "fg": "#FF0000"
         },
         "charged": {
-            "fg": "#002b36",
-            "bg": "#0000FF"
+            "fg": "#00FFFF"
         }
     },
     "mtv": {
