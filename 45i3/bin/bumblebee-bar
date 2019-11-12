@@ -16,6 +16,8 @@
         time \
         tztime:utc \
     -p \
+        battery.warning=15 \
+        battery.critical=5 \
         interval=2 \
         mtv.tz="US/Pacific" \
         utc.tz="UTC" \
