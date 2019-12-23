@@ -45,13 +45,15 @@
         "prefix": ""
     },
     "tztime": {
-        "prefix": "",
-        "fg": "#93a1a1",
-        "bg": "#333333"
+        "prefix": ""
     },
-    "time": {
+    "pit": {
+        "prefix": "",
         "fg": "#002b36",
         "bg": "#859900"
+    },
+    "pitdate": {
+      "prefix": ""
     },
     "isup": {
         "prefix": "",
