@@ -5,29 +5,24 @@
 
 ~/.i3/bumblebee-status/bumblebee-status \
     -m \
-        shortnic \
-        isup:goog \
+        nic \
         cpu \
-        battery \
-        load1 \
+        memory \
         pasink \
-        tztime:pitdate \
-        tztime:mtv \
-        tztime:pit \
-        tztime:utc \
+        pasource \
+        battery \
+        date \
+        time \
     -p \
+        interval=2 \
+        memory.format='{percent:.1f}%' \
         battery.warning=15 \
         battery.critical=5 \
-        interval=2 \
-        mtv.tz="US/Pacific" \
-        utc.tz="UTC" \
-        pit.tz="US/Eastern" \
-        pitdate.tz="US/Eastern" \
-        pitdate.format="%b %d %Y" \
         time.format="%H:%M" \
         date.format="%b %d %Y" \
-        shortnic.exclude="enp0s25,lo,docker0,enp0s31f6" \
         goog.address="www.google.com" \
         goog.name="NET" \
+        nic.exclude="enp0s25,lo,docker0,enp0s31f6" \
+        nic.format="{intf} {state}" \
     -t carapace-powerline
 
