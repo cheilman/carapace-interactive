@@ -1,4 +1,5 @@
 aptitude
+brightnessctl
 curl
 dconf
 dunst

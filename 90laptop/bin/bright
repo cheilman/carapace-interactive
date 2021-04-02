@@ -3,4 +3,8 @@
 # Adjust brightness
 #
 
-/usr/bin/xbacklight -inc 10
+if which brightnessctl &> /dev/null; then
+  brightnessctl set +10%
+elif which xbacklight &> /dev/null; then
+  xbacklight -inc 10
+fi
