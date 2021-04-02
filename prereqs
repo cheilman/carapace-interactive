@@ -10,7 +10,7 @@ i3lock
 i3-nagbar
 ibam
 import
-klist
+#klist
 nmcli
 notify-send
 numlockx
