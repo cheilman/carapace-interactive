@@ -17,8 +17,10 @@ numlockx
 pacmd
 pactl
 ping
+rofi
 ssh
 systemctl
+tilix
 /usr/bin/dex
 /usr/bin/guake
 /usr/bin/pactl
