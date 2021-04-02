@@ -32,7 +32,7 @@ beethemedir="${moduledir}/carapace-bee/themes"
 if [ -d "$beerepo" ]; then
     if [ -d "$beemoddir" -a -n "$(ls -A "$beemoddir"/*.py 2> /dev/null)" ]; then
         for i in $beemoddir/*.py; do
-            carapace-redirect "$i" "${beerepo}/bumblebee/modules/${i:t}"
+            carapace-redirect "$i" "${beerepo}/bumblebee_status/modules/${i:t}"
         done
     fi
     if [ -d "$beethemedir" -a -n "$(ls -A "$beethemedir"/*.json 2> /dev/null)" ]; then
