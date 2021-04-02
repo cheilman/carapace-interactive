@@ -1,0 +1,12 @@
+#!/usr/bin/env zsh
+#
+# Adjust volume
+#
+
+if [ -r "$HOME/.path-carapace" ]; then
+    source "$HOME/.path-carapace"
+fi
+
+/usr/bin/pactl set-source-mute @DEFAULT_SOURCE@ toggle
+audio-status -d
+
