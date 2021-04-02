@@ -13,7 +13,7 @@ if [ $? -ne 0 ]; then
 else
     IBUS=`ibus version 2> /dev/null | sed -e 's/\([0-9][0-9]*\)/00\1/g'`
     # If version is too old...
-    if [ "$IBUS" \< "IBus 001.005.011" ]; then
+    if [[ "$IBUS" < "IBus 001.005.011" ]]; then
         export IBUS_ENABLE_SYNC_MODE=1
     fi
 fi
