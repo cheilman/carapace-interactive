@@ -10,14 +10,14 @@ generateddir="${2:-/dev/null}"
 source "${HOME}/bin/carapace/goenv-cache"
 
 # Install a bunch of go repos
-repos=( "github.com/jessfraz/battery" )
+repos=( "github.com/jessfraz/battery@latest" )
 
 if [ -d "$GOPATH" -a -x "$(which go 2> /dev/null)" ]; then
     export CARAPACE_INDENT="  ${CARAPACE_INDENT}"
 
     for i in $repos; do
         (
-            ${GOROOT}/bin/go get -u "$i"
+            ${GOROOT}/bin/go install "$i"
             if [ $? -ne 0 ]; then
                 carapace-message "himagenta" "Failed to install go utility: $i"
             else
